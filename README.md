@@ -3,6 +3,7 @@
 ![Type](https://img.shields.io/badge/Type-Device%20Simulator-success)
 ![Use Case](https://img.shields.io/badge/Use%20Case-Embedded%20Testing-yellow)
 ![Platform](https://img.shields.io/badge/Platform-Linux-lightgrey)
+![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
 ![License](https://img.shields.io/github/license/p2610/serial-slave-simulator)
 ![Debug](https://img.shields.io/badge/Debugging-Serial%20Sniffing-blueviolet)
 
