@@ -1,0 +1,78 @@
+{
+  "simulator": {
+    "update_interval_s": 1.0,
+    "log_transactions": true,
+    "max_monitor_rows": 5,
+    "log_file": "serial_sim.csv"
+  },
+  "sensors": [
+    {
+      "name": "SensorMeteo1",
+      "port": "/tmp/ttyV2",
+      "baudrate": 9600,
+      "data_bits": 8,
+      "stop_bits": 1,
+      "parity": "none",
+      "header": "#",
+      "separator": ";",
+      "command": "GET_DATA\n",
+      "end_of_line": "\n",
+      "timeout": 200,
+      "mode": "request_response",
+      "variables": [
+        {
+          "name": "Temperatura",
+          "position": 0,
+          "storage_address": 2,
+          "value_mode": "sine",
+          "value": 25.0,
+          "min": 15.0,
+          "max": 45.0,
+          "period_s": 60.0,
+          "decimals": 2,
+          "unit": "\u00b0C"
+        },
+        {
+          "name": "Presion",
+          "position": 1,
+          "storage_address": 3,
+          "value_mode": "random",
+          "value": 1013.0,
+          "min": 980.0,
+          "max": 1030.0,
+          "period_s": 30.0,
+          "decimals": 1,
+          "unit": "hPa"
+        }
+      ]
+    },
+    {
+      "name": "SensorHumedad",
+      "port": "/tmp/ttyV4",
+      "baudrate": 9600,
+      "data_bits": 8,
+      "stop_bits": 1,
+      "parity": "none",
+      "header": "$",
+      "separator": ",",
+      "command": "READ\n",
+      "end_of_line": "\r\n",
+      "timeout": 200,
+      "mode": "request_response",
+      "variables": [
+        {
+          "name": "Humedad",
+          "position": 0,
+          "storage_address": 4,
+          "value_mode": "ramp",
+          "value": 50.0,
+          "min": 20.0,
+          "max": 90.0,
+          "period_s": 120.0,
+          "decimals": 1,
+          "unit": "%"
+        }
+      ]
+    }
+  ]
+}
