@@ -12,7 +12,7 @@
 Descripción (ES):
 Este proyecto implementa un simulador de esclavos serie que emula sensores conectados a puertos serie y responde a comandos según una configuración JSON. Es útil para pruebas de integración, depuración de firmware y desarrollo de software que interactúe con dispositivos serie.
 
-<img width="1372" height="614" alt="image" src="https://github.com/user-attachments/assets/8304f0c6-5791-4d1b-9fea-30ff1011e48a" />
+<img width="1908" height="593" alt="Captura desde 2026-03-29 23-27-09" src="https://github.com/user-attachments/assets/fa175921-1236-4466-a58b-c41bcb6e3799" />
 
 ---
 
